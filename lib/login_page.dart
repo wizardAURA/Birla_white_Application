@@ -132,7 +132,7 @@ class LoginPage extends StatelessWidget {
         ),
         ),
           const Padding(
-            padding:  EdgeInsets.fromLTRB(0,242,0,0),
+            padding:  EdgeInsets.fromLTRB(0,242,0,1),
             child: Text('Developed by Birla White IT 🤍 ',
             style: TextStyle(
               color: Colors.white,
