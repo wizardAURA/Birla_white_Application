@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart' as box_decoration;
 import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart' as box_shadow;
-import 'package:flutter/material.dart';
 import 'package:untitled4/my_button.dart';
+import 'ForgotPasswordPage.dart'; // Import the new page
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -132,11 +133,19 @@ class LoginPage extends StatelessWidget {
                         Container(
                           padding: EdgeInsets.only(top: constraints.maxHeight * 0.01, right: constraints.maxWidth * 0.15),
                           alignment: Alignment.centerRight,
-                          child: const Text(
-                            'Forgot Password',
-                            style: TextStyle(
-                              fontFamily: 'Play',
-                              color: Colors.white,
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const ForgotPasswordPage()),
+                              );
+                            },
+                            child: const Text(
+                              'Forgot Password',
+                              style: TextStyle(
+                                fontFamily: 'Play',
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ),
