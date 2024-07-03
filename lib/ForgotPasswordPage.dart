@@ -90,7 +90,7 @@ class ForgotPasswordPage extends StatelessWidget {
                   Container(
                     child: SizedBox(height: 39, width: 45,
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(8, 0, 0, 2),
+                        padding: const EdgeInsets.fromLTRB(8, 0, 0, 2.1),
                         child: TextField(
                           decoration: InputDecoration(hintText: '+91'),
                         ),
