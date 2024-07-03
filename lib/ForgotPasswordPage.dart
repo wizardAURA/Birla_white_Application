@@ -1,7 +1,8 @@
 
 
 import 'package:flutter/material.dart';
-
+import 'package:flutter/services.dart';
+import 'package:untitled4/OTP_page.dart';
 
 class ForgotPasswordPage extends StatelessWidget {
   const ForgotPasswordPage({super.key});
@@ -47,15 +48,23 @@ class ForgotPasswordPage extends StatelessWidget {
               padding: const EdgeInsets.all(30),
               child: Stack(
                 children: [
-                  Container(
-                    height: 39,
-                    width: 53,
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(6),
-                    color: Color.fromRGBO(30, 131, 250, 1)),
-                  ),
+                  // Container(
+                  //   height: 39,
+                  //   width: 53,
+                  //   decoration: BoxDecoration(borderRadius: BorderRadius.circular(6),
+                  //   color: const Color.fromRGBO(30, 131, 250, 1)),
+                  // ),
                   Container(
                     child: SizedBox(height: 39,width: 316,
                       child: TextField(
+                        keyboardType: TextInputType.number,
+                        inputFormatters: <TextInputFormatter> [
+                          LengthLimitingTextInputFormatter(10),
+                          FilteringTextInputFormatter.allow(RegExp(r'[0-9]'),
+                          ),
+                          FilteringTextInputFormatter.digitsOnly
+
+                        ],
 
                         style: const TextStyle(
                           color: Color.fromRGBO(30, 131, 250, 1),
@@ -74,7 +83,7 @@ class ForgotPasswordPage extends StatelessWidget {
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(6.0),
-                            borderSide: const BorderSide(color: Color.fromRGBO(30, 131, 250, 1)),
+                              borderSide: const BorderSide(color: Color.fromRGBO(30, 131, 250, 1)),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(6),
@@ -88,11 +97,38 @@ class ForgotPasswordPage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    child: SizedBox(height: 39, width: 45,
+                    child:  SizedBox(height:39, width: 53 ,
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(8, 0, 0, 2.1),
+                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                         child: TextField(
-                          decoration: InputDecoration(hintText: '+91'),
+                          keyboardType: TextInputType.number,
+                          inputFormatters: <TextInputFormatter> [
+                            LengthLimitingTextInputFormatter(2),
+                            FilteringTextInputFormatter.allow(RegExp(r'[0-9]'),
+                            ),
+                            FilteringTextInputFormatter.digitsOnly
+
+                          ],
+                          decoration: InputDecoration(hintText: '+91',
+                            contentPadding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
+                            hintStyle:const TextStyle(
+                              fontFamily: 'mate',
+
+                              color: Colors.white,
+                              fontSize: 14,
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(6.0),
+                              borderSide: const BorderSide(color: Color.fromRGBO(30, 131, 250, 1)),
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(6),
+                              borderSide: const BorderSide(color: Colors.black),
+                            ),
+                            fillColor: Color.fromRGBO(30, 131, 250, 1),
+                            filled: true,
+                          ),
+
                         ),
                       ),
                     ),
@@ -100,7 +136,35 @@ class ForgotPasswordPage extends StatelessWidget {
 
                 ],
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 420, 0, 0),
+              child: SizedBox(
+                height: 38,width: 287,
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: TextButton(
+                    child: const Text(
+                      'Get OTP',
+                      style: TextStyle(
+                        fontFamily: 'music',
+                        fontSize: 16,
+
+                        color: Colors.white,
+                      ),
+
+                    ),
+
+                    style: TextButton.styleFrom(
+                      backgroundColor: Color.fromRGBO(30, 131, 250, 1),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(6)
+                      )
+                    ), onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context)=> const OTPpage()),); },
+                  ),
+                ),
+              ),
+            ),
           ],
         )),
 

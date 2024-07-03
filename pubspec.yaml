@@ -98,6 +98,9 @@ flutter:
      - family: news
        fonts:
          - asset: fonts/Newsreader-VariableFont_opsz,wght.ttf
+     - family: mate
+       fonts:
+         - asset: fonts/Mate-Regular.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
