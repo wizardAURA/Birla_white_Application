@@ -66,6 +66,7 @@ flutter:
    assets:
      - images/Loginpic/birla-white-logo.png
      - images/Sc.png
+     - images/Icons/xmark-solid.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -85,6 +86,18 @@ flutter:
      - family: Monda
        fonts:
          - asset: fonts/Monda-Bold.ttf
+     - family: mich
+       fonts:
+         - asset: fonts/Michroma-Regular.ttf
+     - family: nani
+       fonts:
+         - asset: fonts/NanumMyeongjo-Bold.ttf
+     - family: music
+       fonts:
+         - asset: fonts/NotoMusic-Regular.ttf
+     - family: news
+       fonts:
+         - asset: fonts/Newsreader-VariableFont_opsz,wght.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #

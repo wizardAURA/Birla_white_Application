@@ -150,9 +150,9 @@ class LoginPage extends StatelessWidget {
                           ),
                         ),
                         const Spacer(),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 16.0),
-                          child: const Text(
+                        const Padding(
+                          padding:  EdgeInsets.only(bottom: 16.0),
+                          child:  Text(
                             'Developed by Birla White IT 🤍',
                             style: TextStyle(
                               color: Colors.white,
