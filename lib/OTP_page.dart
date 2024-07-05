@@ -46,8 +46,8 @@ class OTPpage extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(19, 32, 10, 0),
                   child: SizedBox(width: 46, height: 54,
                     child: Container(
-                      decoration: BoxDecoration(
-                        boxShadow: const [
+                      decoration: const BoxDecoration(
+                        boxShadow:  [
                           BoxShadow(
                             offset: Offset(0, 0.1),
                             blurRadius: 5,
@@ -66,7 +66,7 @@ class OTPpage extends StatelessWidget {
                               FocusScope.of(context).nextFocus();
                             }
                           },
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 32,
                             fontFamily: 'mate'
                           ),
@@ -103,8 +103,8 @@ class OTPpage extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(0, 32, 10, 0),
                   child: SizedBox(width: 46, height: 54,
                     child: Container(
-                      decoration: BoxDecoration(
-                          boxShadow: const [
+                      decoration: const BoxDecoration(
+                          boxShadow:  [
                             BoxShadow(
                                 offset: Offset(0, 0.1),
                                 blurRadius: 5,
@@ -123,7 +123,7 @@ class OTPpage extends StatelessWidget {
                               FocusScope.of(context).nextFocus();
                             }
                           },
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 32,
                               fontFamily: 'mate'
                           ),
@@ -160,8 +160,8 @@ class OTPpage extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(0, 32, 10, 0),
                   child: SizedBox(width: 46, height: 54,
                     child: Container(
-                      decoration: BoxDecoration(
-                          boxShadow: const [
+                      decoration: const BoxDecoration(
+                          boxShadow:  [
                             BoxShadow(
                                 offset: Offset(0, 0.1),
                                 blurRadius: 5,
@@ -180,7 +180,7 @@ class OTPpage extends StatelessWidget {
                               FocusScope.of(context).nextFocus();
                             }
                           },
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 32,
                               fontFamily: 'mate'
                           ),
@@ -217,8 +217,8 @@ class OTPpage extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(0, 32, 10, 0),
                   child: SizedBox(width: 46, height: 54,
                     child: Container(
-                      decoration: BoxDecoration(
-                          boxShadow: const [
+                      decoration: const BoxDecoration(
+                          boxShadow:  [
                             BoxShadow(
                                 offset: Offset(0, 0.1),
                                 blurRadius: 5,
@@ -237,7 +237,7 @@ class OTPpage extends StatelessWidget {
                               FocusScope.of(context).nextFocus();
                             }
                           },
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 32,
                               fontFamily: 'mate'
                           ),
@@ -274,8 +274,8 @@ class OTPpage extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(0, 32, 10, 0),
                   child: SizedBox(width: 46, height: 54,
                     child: Container(
-                      decoration: BoxDecoration(
-                          boxShadow: const [
+                      decoration: const BoxDecoration(
+                          boxShadow:  [
                             BoxShadow(
                                 offset: Offset(0, 0.1),
                                 blurRadius: 5,
@@ -294,7 +294,7 @@ class OTPpage extends StatelessWidget {
                               FocusScope.of(context).nextFocus();
                             }
                           },
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 32,
                               fontFamily: 'mate'
                           ),
@@ -331,8 +331,8 @@ class OTPpage extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(0, 32, 10, 0),
                   child: SizedBox(width: 46, height: 54,
                     child: Container(
-                      decoration: BoxDecoration(
-                          boxShadow: const [
+                      decoration: const BoxDecoration(
+                          boxShadow: [
                             BoxShadow(
                                 offset: Offset(0, 0.1),
                                 blurRadius: 5,
@@ -351,7 +351,7 @@ class OTPpage extends StatelessWidget {
                               FocusScope.of(context).nextFocus();
                             }
                           },
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 32,
                               fontFamily: 'mate'
                           ),
@@ -393,6 +393,12 @@ class OTPpage extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: TextButton(
+                    style: TextButton.styleFrom(
+                        backgroundColor: const Color.fromRGBO(30, 131, 250, 1),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(6)
+                        )
+                    ), onPressed: () { },
                     child: const Text(
                       'Next',
                       style: TextStyle(
@@ -403,13 +409,6 @@ class OTPpage extends StatelessWidget {
                       ),
 
                     ),
-
-                    style: TextButton.styleFrom(
-                        backgroundColor: const Color.fromRGBO(30, 131, 250, 1),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(6)
-                        )
-                    ), onPressed: () { },
                   ),
                 ),
               ),
