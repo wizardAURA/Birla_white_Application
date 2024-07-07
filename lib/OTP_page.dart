@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' ;
+import 'package:untitled4/Apppage.dart';
 class OTPpage extends StatelessWidget {
   const OTPpage({super.key});
 
@@ -398,7 +399,7 @@ class OTPpage extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6)
                         )
-                    ), onPressed: () { },
+                    ), onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context)=> const Apppage()),);},
                     child: const Text(
                       'Next',
                       style: TextStyle(
