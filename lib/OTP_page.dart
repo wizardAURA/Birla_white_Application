@@ -399,7 +399,7 @@ class OTPpage extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6)
                         )
-                    ), onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context)=> const Apppage()),);},
+                    ), onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context)=> Apppage()),);},
                     child: const Text(
                       'Next',
                       style: TextStyle(
