@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled4/Our_products.dart';
+import 'package:untitled4/quckimenu.dart';
 
 class quick extends StatelessWidget {
   const quick({super.key});
@@ -45,7 +46,9 @@ class quick extends StatelessWidget {
                   padding:  const EdgeInsets.fromLTRB(120, 0, 0, 0),
                   child: SizedBox(
                     height:106,
-                    width: 95, child: IconButton(onPressed: (){}, icon: Image.asset('images/quick/Rectangle 27.png')),),
+                    width: 95, child: IconButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> const Menu()),);
+                  }, icon: Image.asset('images/quick/Rectangle 27.png')),),
                 ),),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(120, 0, 0, 0),

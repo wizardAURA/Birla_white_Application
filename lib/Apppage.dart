@@ -19,7 +19,7 @@ final myitems = [
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const Padding(
-        padding:  EdgeInsets.fromLTRB(0, 100, 0, 0),
+        padding:  EdgeInsets.fromLTRB(0, 97, 0, 0),
         child: Dra(),
       ),
       backgroundColor: Colors.white,
