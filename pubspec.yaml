@@ -81,6 +81,16 @@ flutter:
      - images/quick/News.png
      - images/quick/Rectangle 26.png
      - images/quick/Rectangle 27.png
+     - images/prod/179.png
+     - images/prod/185_png.png
+     - images/prod/190_png.png
+     - images/prod/214.png
+     - images/prod/220.png
+     - images/prod/233.png
+     - images/prod/247.png
+     - images/prod/252.png
+     - images/prod/BW_Excel Putty_30kg_Packshot (1).png
+     - images/prod/Lavender-20-kg (1).png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

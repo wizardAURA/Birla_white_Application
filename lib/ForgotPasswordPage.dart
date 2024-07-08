@@ -125,7 +125,7 @@ class ForgotPasswordPage extends StatelessWidget {
                               borderRadius: BorderRadius.circular(6),
                               borderSide: const BorderSide(color: Colors.black),
                             ),
-                            fillColor: Color.fromRGBO(30, 131, 250, 1),
+                            fillColor: const Color.fromRGBO(30, 131, 250, 1),
                             filled: true,
                           ),
 
@@ -144,6 +144,12 @@ class ForgotPasswordPage extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromRGBO(30, 131, 250, 1),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(6)
+                      )
+                    ), onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context)=> const OTPpage()),); },
                     child: const Text(
                       'Get OTP',
                       style: TextStyle(
@@ -154,13 +160,6 @@ class ForgotPasswordPage extends StatelessWidget {
                       ),
 
                     ),
-
-                    style: TextButton.styleFrom(
-                      backgroundColor: Color.fromRGBO(30, 131, 250, 1),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(6)
-                      )
-                    ), onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context)=> const OTPpage()),); },
                   ),
                 ),
               ),

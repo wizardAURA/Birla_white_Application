@@ -19,11 +19,11 @@ class quick extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.fromLTRB(25, 0, 0, 0),
-                  child: Container(
+                  child: SizedBox(
                     height:106,
                     width: 95, child: IconButton(
                     icon: Image.asset('images/quick/Rectangle 26.png'),onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> Our_products()),);},
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> const Our_products()),);},
                   ),
                   ),
                 ),
@@ -42,14 +42,14 @@ class quick extends StatelessWidget {
             Column(
               children: [
                 InkWell(onTap: (){}  ,child: Padding(
-                  padding:  EdgeInsets.fromLTRB(120, 0, 0, 0),
-                  child: Container(
+                  padding:  const EdgeInsets.fromLTRB(120, 0, 0, 0),
+                  child: SizedBox(
                     height:106,
                     width: 95, child: IconButton(onPressed: (){}, icon: Image.asset('images/quick/Rectangle 27.png')),),
                 ),),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(120, 0, 0, 0),
-                  child: Container(child: Text('Quick Menu',
+                  child: Container(child: const Text('Quick Menu',
                     style: TextStyle(
                       color: Color.fromRGBO(30, 131, 250, 1),
 
@@ -68,14 +68,14 @@ class quick extends StatelessWidget {
               children: [
                 InkWell(onTap: (){}  ,child: Padding(
                   padding: const EdgeInsets.fromLTRB(25, 0, 0, 0),
-                  child: Container(
+                  child: SizedBox(
 
                     height:106,
                     width: 95, child: IconButton(onPressed: (){}, icon: Image.asset('images/quick/Lunacy.png' )),),
                 ),),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                  child: Container(child: Text('Applications',
+                  child: Container(child: const Text('Applications',
                     style: TextStyle(
                       color: Color.fromRGBO(30, 131, 250, 1),
 
@@ -91,14 +91,14 @@ class quick extends StatelessWidget {
 
                 }  ,child: Padding(
                   padding: const EdgeInsets.fromLTRB(120, 0, 0, 0),
-                  child: Container(
+                  child: SizedBox(
 
                     height:106,
                     width: 95, child: IconButton(onPressed: (){}, icon: Image.asset('images/quick/News.png' )),),
                 ),),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(120, 0, 0, 0),
-                  child: Container(child: Text('Documents',
+                  child: Container(child: const Text('Documents',
                     style: TextStyle(
                       color: Color.fromRGBO(30, 131, 250, 1),
 
@@ -112,9 +112,9 @@ class quick extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.fromLTRB(0, 25.5, 0, 0),
-          child: Container(color: Color.fromRGBO(30, 131, 250, 1),
+          child: Container(color: const Color.fromRGBO(30, 131, 250, 1),
             width: 400 ,height: 30,
-            child: Center(child: Text('Developed By Birla White IT 🤍  ',
+            child: const Center(child: Text('Developed By Birla White IT 🤍  ',
               style: TextStyle(color: Colors.white),)),
           ),
         ),

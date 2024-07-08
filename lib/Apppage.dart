@@ -1,7 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:untitled4/OTP_page.dart';
-import 'package:untitled4/Our_products.dart';
 import 'package:untitled4/drawer.dart';
 import 'package:untitled4/myimageslider.dart';
 import 'package:untitled4/quickview.dart';
@@ -216,8 +214,8 @@ final myitems = [
           ),),
         ),
 
-      Padding(
-        padding: const EdgeInsets.fromLTRB(0, 360, 0, 0),
+      const Padding(
+        padding: EdgeInsets.fromLTRB(0, 360, 0, 0),
         child: quick(),
       )
       ],
