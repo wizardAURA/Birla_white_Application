@@ -3,6 +3,7 @@ import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart' as box_d
 import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart' as box_shadow;
 import 'package:untitled4/my_button.dart';
 import 'ForgotPasswordPage.dart'; // Import the new page
+import 'package:untitled4/Apppage.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -149,10 +150,31 @@ class LoginPage extends StatelessWidget {
                             ),
                           ),
                         ),
+                        const SizedBox(height: 16), // Add spacing
+                        ElevatedButton(
+                          onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=> Apppage()),);},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.blue, // Background color
+                            foregroundColor: Colors.white, // Text color
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(13),
+                            ),
+                            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12), // Adjust padding
+                            minimumSize: Size(constraints.maxWidth * 0.5, 45), // Adjust size
+                          ),
+                          child: const Text(
+                            'Login',
+                            style: TextStyle(
+                              fontFamily: 'Play',
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
                         const Spacer(),
                         const Padding(
-                          padding:  EdgeInsets.only(bottom: 16.0),
-                          child:  Text(
+                          padding: EdgeInsets.only(bottom: 16.0),
+                          child: Text(
                             'Developed by Birla White IT 🤍',
                             style: TextStyle(
                               color: Colors.white,
